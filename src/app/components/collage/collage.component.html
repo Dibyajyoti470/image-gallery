@@ -1,0 +1,31 @@
+<div
+  class="image-gallery"
+  infiniteScroll
+  [infiniteScrollDistance]="1"
+  (scrolled)="onScroll()"
+>
+  <div class="col">
+    <img
+      *ngFor="let row of collage; let i = index"
+      [src]="row[0].download_url"
+      [alt]="row[0].id"
+      class="single-image"
+    />
+  </div>
+  <div class="col">
+    <img
+      *ngFor="let row of collage; let i = index"
+      [src]="row[1].download_url"
+      [alt]="row[1].id"
+      class="single-image"
+    />
+  </div>
+  <div class="col">
+    <img
+      *ngFor="let row of collage; let i = index"
+      [src]="row[2].download_url"
+      [alt]="row[2].id"
+      class="single-image"
+    />
+  </div>
+</div>

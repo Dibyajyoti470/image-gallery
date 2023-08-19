@@ -1,0 +1,19 @@
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1320px;
+    margin: 48px 0;
+  }
+  
+  .single-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
